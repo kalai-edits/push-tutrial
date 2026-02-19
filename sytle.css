@@ -1,0 +1,37 @@
+.grid div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: palevioletred;
+    border: 1px solid black;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: "t t t" "s1 m s2" "f f f";
+}
+
+.top {
+    grid-area: t;
+}
+
+.side1 {
+    grid-area: s1;
+}
+
+.main {
+    grid-area: m;
+}
+
+.side2 {
+    grid-area: s2;
+}
+
+.foot {
+    grid-area: f;
+}
